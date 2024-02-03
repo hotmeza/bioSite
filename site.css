@@ -1,0 +1,134 @@
+/*
+Kevin Meza
+Module 6.3 Assignment
+January 31, 2024
+CSD340 bioSite
+*/
+
+body {
+    font-size: 80%;
+    font-family: 'Garamond', serif;
+    letter-spacing: 0.15em;
+    background-color: #F69B60;
+    background-size: 20%;
+    background-blend-mode: overlay;
+}
+
+#page {
+    max-width: 940px;
+    min-width: fit-content;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 15px double #145A32;
+    background-color: #F6BB60;
+}
+
+#title {
+    font-family: 'Garamond', serif;
+    font-size: x-large;
+    font-weight: 700;
+    display: inline;
+    width: 150px;
+    color: #00312E;
+    text-align: center;
+    text-shadow: 2px 2px 2px #F69B60;
+}
+
+#subtitle {
+    font-family: 'Garamond', serif;
+    font-size: medium;
+    display: inline;
+    width: 150px;
+    color: #00312E;
+    text-align: center;
+    text-shadow: 1px 1px 2px #145A32;
+}
+
+ul {
+    width: 570px;
+    padding: 15px;
+    margin: 0px auto 0px auto; 
+    border-top: 2px solid #000;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0px 3px;
+}
+
+p {
+    text-align: center;
+    width: 600px;
+    margin: 20px auto 20px auto;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+.summary {
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 75%;
+    min-width: fit-content;
+    margin: 20px auto 20px auto;
+    margin-bottom: 10%;
+    font-size: medium;
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+    font-size: medium;
+}
+
+a:hover, a.on {
+    color: #145A32;
+    background-color: #F69B60;
+}
+
+footer a {
+    color: #00312E;
+    font-weight: 400;
+    font-size: medium;
+    text-shadow: 2px 2px 2px #145A32;
+}
+
+#section_title1, #section_title2, #section_title3 {
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    padding-top: 0%;
+}
+
+h2, h3 {
+    font-family: 'Garamond', serif;
+    color: #00312E;
+    font-size: large;
+    text-align: center;
+    text-shadow: 1px 1px 2px #006255;
+}
+
+h4 {
+    font-family: 'Garamond', serif;
+    color: #00312E;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    font-weight: 400;
+    color: #00312E;
+    font-family: 'Garamond', serif;
+}
+
+.grid-item {
+    padding: 5px;
+}
