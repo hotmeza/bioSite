@@ -9,7 +9,7 @@ body {
     font-size: 80%;
     font-family: 'Garamond', serif;
     letter-spacing: 0.15em;
-    background-color: #F69B60;
+    background-color: #F89E5B;
     background-size: 20%;
     background-blend-mode: overlay;
 }
@@ -20,7 +20,7 @@ body {
     margin: 10px auto 10px auto;
     padding: 20px;
     border: 15px double #145A32;
-    background-color: #F6BB60;
+    background-color: #FEE7A0;
 }
 
 #title {
@@ -87,7 +87,7 @@ a {
 
 a:hover, a.on {
     color: #145A32;
-    background-color: #F69B60;
+    background-color: #F0B27A;
 }
 
 footer a {
@@ -123,12 +123,79 @@ figure {
 
 figcaption {
     font-style: italic;
-    font-size: .75em;
-    font-weight: 400;
+    font-size: .90em;
+    font-weight: 600;
     color: #00312E;
     font-family: 'Garamond', serif;
 }
 
 .grid-item {
     padding: 5px;
+}
+
+/* Slider */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -6%;
+  }
+
+  .slider {
+    max-width: 800px;
+    height: 300px;
+    margin: 40px;
+    text-align: center;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url(#);
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory
+  }
+
+.auto_wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    animation: slide 6s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.slider img {
+    width: 100%;
 }
